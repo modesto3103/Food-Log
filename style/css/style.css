@@ -3,9 +3,64 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    box-sizing: border-box;
+:root{
+    --fonte-default: 'Montserrat', sans-serif;
+}
+
+.titulo-foodlog{
+    height:100vh;
+    background-image: url('../Images/restaurante-capa.png');
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color:#fff;
+    
+}
+
+.titulo-foodlog-food{
+    position: absolute;
+    left: 0rem;
+    top: 14.1rem;
+    margin-left: -1.595rem;
+    
+    font-family: var(--fonte-default);
+    font-size: 28.45rem;
+}
+
+.titulo-foodlog-logebotao{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-foodlog-log{
+    position: absolute;
+    left: 0rem;
+    top: 36.6rem;
+    margin-left: -1.595rem;
+    font-family: var(--fonte-default);
+    font-size: 22.104rem;
+}
+
+.titulo-foodlog-vamosComecar{
+    position: absolute;
+    left: 43.3rem;
+    top: 40rem;
+    background: linear-gradient(270deg, #FBD7B7 -14.59%, #FBD786 83.28%, #F7797D 181.15%);
+    border-radius: 0.41rem;
+    width: 30.5rem;
+    height: 5.8rem;
+    text-align: center;
+    font-family: var(--fonte-default);
+    font-size: 2.095rem;
+    font-weight: 500;
+    padding: 1.6rem 6.5rem;
+    color: #1c1c1c;
+    text-decoration: none;
+
 }
