@@ -3,49 +3,101 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>FoodLog</title>
-
         <link rel="stylesheet" href="./style/css/style.css">
-
     </head>
 
     <body>
-        <main>
-            <header class="titulo-foodlog">
-                <h1 class="titulo-foodlog-food">Food</h1>
-                
-                <div class="titulo-foodlog-logebotao">
-                    <h1 class="titulo-foodlog-log">Log</h1>
-                    
-                    <a class="titulo-foodlog-vamosComecar" href="#">vamos começar!</a>
+        <header>
+            <h1 id="food">Food</h1>
+            <h1 id="log">Log</h1>
 
-                </div>
+            <a class="botao" id="hbotao" href="#">vamos começar!</a>
 
-                
-            </header>
+            <a class="header-menu" id="hmenu1" href="#">login</a>
+            <a class="header-menu" id="hmenu2" href="#">restaurantes</a>
+            <a class="header-menu" id="hmenu3" href="#">o que é um backlog</a>
+            <a class="header-menu" id="hmenu4" href="#">sobre nós</a>
+            <a class="header-menu" id="hmenu5" href="#">ajuda</a>
+        </header>
+
+        <section id="section-comidas">
+            <div id="div-section-menu">
+                <a class="section-menu" id="smenu1" href="#">Árabe</a>
+                <a class="section-menu" id="smenu2" href="#">Brasileira</a>
+                <a class="section-menu" id="smenu3" href="#">Francesa</a>
+                <a class="section-menu" id="smenu4" href="#">Italiana</a>
+                <a class="section-menu" id="smenu5" href="#">Japonêsa</a>
+                <a class="section-menu" id="smenu6" href="#">Mediterrânea</a>
+            </div>
+
+            <h3 class="section-titulo" id="stitulo1">A culinária pioneira <br>da humanidade</h3>
+            <h3 class="section-titulo" id="stitulo2"></h3>
+            <h3 class="section-titulo" id="stitulo3"></h3>
+            <h3 class="section-titulo" id="stitulo4"></h3>
+            <h3 class="section-titulo" id="stitulo5"></h3>
+            <h3 class="section-titulo" id="stitulo6"></h3>
+
+            <p class="section-texto" id="stexto1">
+                Culinária árabe é um termo que define as diversas culinárias <br>
+                regionais existentes por todo o Mundo Árabe, do Iraque a <br>
+                Marrocos passando pelo Egito, Levante, entre outros. Também foi <br>
+                influenciada pelas culinárias vizinhas, como da Turquia, Paquistão, <br>
+                Irã e Índia, além dos hábitos alimentares dos berberes e de outros <br>
+                povos e culturas que habitavam estas regiões antes do processo <br>
+                de arabização cultural empreendido pelos árabes durante a <br>
+                chamada expansão islâmica.</p>
+            <p class="section-texto" id="stexto2"></p>
+            <p class="section-texto" id="stexto3"></p>
+            <p class="section-texto" id="stexto4"></p>
+            <p class="section-texto" id="stexto5"></p>
+            <p class="section-texto" id="stexto6"></p>
+
+            <a class="botao" id="sbotao" href="#">explorar restaurantes</a>        
+        </section>
+
+        <section id="section-restaurantes">
+            <h3 id="stitulo7">Restaurantes</h3>
+            <p id="stexto2">Principais escolhas de nossos clientes</p>  
             
-            <section class="menu-vertical">
-                <a class="menu-vertical-login" href="#">login</a>
-                
-                <a class="menu-vertical-restaurantes" href="#">restaurantes</a>
-                
-                <a class="menu-vertical-oqueeumbacklog" href="#">o que é um backlog</a>
-                
-                <a class="menu-vertical-sobrenos" href="#">sobre nós</a>
-                
-                <a class="menu-vertical-ajuda" href="#">ajuda</a>
-                
-            </section>
-            
-            <!–<img src="./style/Images/restaurante-capa.png" alt="Foto do resturante Manioca">
-
-        </main>
-       
+            <ul>
+                <li class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">Bella Città Café</h3>
+                        <p class="card-text">Panquecas americanas com mel e banana</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h4 class="card-title">Prime Steakhouse</h4>
+                        <p class="card-text">Tomahawk com legumes e molho especial</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt=""></div>
+                    <div class="card-info">
+                        <h4 class="card-title">Savory Soiree</h4>
+                        <p class="card-text">Salada com castanhas</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt=""></div>
+                    <div class="card-info">
+                        <h4 class="card-title">Epicurean Hideaway</h4>
+                        <p class="card-text">Salmão grelhado com legumes</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </body>
 </html>
-

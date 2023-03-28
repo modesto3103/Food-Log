@@ -1,66 +1,284 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: montserrat;
 }
 
-:root{
-    --fonte-default: 'Montserrat', sans-serif;
+:root {
+    font-size: 62.5%;
 }
 
-.titulo-foodlog{
-    height:100vh;
-    background-image: url('../Images/restaurante-capa.png');
-    background-size: cover;
-    
+
+
+
+
+/* Início página 1 */
+header {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
     color:#fff;
-    
 }
 
-.titulo-foodlog-food{
+header::before {
+    content: "";
     position: absolute;
-    left: 0rem;
-    top: 14.1rem;
-    margin-left: -1.595rem;
-    
-    font-family: var(--fonte-default);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/background-header.png');
+    background-size: cover;
+    background-position-y: center;
+    z-index: -1;
+}
+
+#food {
+    padding-top: 7.8rem;
+    margin-left: -1.6rem;
     font-size: 28.45rem;
+
+    background: linear-gradient(90deg, #F7797D -79.3%, #FBD786 7.77%, #FBD7B7 102.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.titulo-foodlog-logebotao{
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.titulo-foodlog-log{
-    position: absolute;
-    left: 0rem;
-    top: 36.6rem;
+#log {
+    padding-top: 0rem;
+    margin-top: -12rem;
     margin-left: -1.595rem;
-    font-family: var(--fonte-default);
-    font-size: 22.104rem;
+    font-size: 22.10rem;
+
+    background: linear-gradient(90deg, #F7797D -108.04%, #FBD786 10.58%, #FBD7B7 139.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.titulo-foodlog-vamosComecar{
+.header-menu {
     position: absolute;
-    left: 43.3rem;
-    top: 40rem;
-    background: linear-gradient(270deg, #FBD7B7 -14.59%, #FBD786 83.28%, #F7797D 181.15%);
+    right: 10.9rem;
+    font-size: 2.5rem;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#hmenu1 {
+    top: 22.8rem;
+}
+
+#hmenu2 {
+    top: 28.8rem;
+}
+
+#hmenu3 {
+    top: 34.2rem;
+}
+
+#hmenu4 {
+    top: 40.2rem;
+}
+
+#hmenu5 {
+    top: 46.2rem;
+}
+
+.botao {
     border-radius: 0.41rem;
-    width: 30.5rem;
-    height: 5.8rem;
+    background: linear-gradient(270deg, #FBD7B7 -14.59%, #FBD786 83.28%, #F7797D 181.15%);
+
     text-align: center;
-    font-family: var(--fonte-default);
     font-size: 2.095rem;
     font-weight: 500;
     padding: 1.6rem 6.5rem;
     color: #1c1c1c;
     text-decoration: none;
+}
 
+#hbotao {
+    margin-top: 9.3rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+
+    width: 30.5rem;
+    height: 5.8rem;
+}
+
+
+
+
+
+/* Início página 2 */
+#section-comidas {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#fff;
+}
+
+#section-comidas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/background-section.png');
+    background-size: cover;
+    background-position-y: center;
+    z-index: -1;
+}
+
+.section-menu {
+    font-size: 2.5rem;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#div-section-menu {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    padding-top: 7.5rem;
+    gap: 5rem;
+    transform: translateY(-50%);
+}
+
+#smenu1 { 
+    padding-left: 23.2rem;
+    font-size: 2.9rem;
+    font-weight: 600;
+
+    background: linear-gradient(90deg, #FBD786 -49.44%, #FBD7B7 262.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#stitulo1 {
+    padding-left: 10.8rem;
+    font-size: 5.4rem;
+
+    background: linear-gradient(90deg, #F7797D -73.73%, #FBD786 9.53%, #FBD7B7 100.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#stexto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding-top: 2.9rem;
+    padding-left: 10.7rem;
+
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+}
+
+#sbotao {
+    margin-top: 3.8rem;
+    margin-left: 10.7rem;
+
+    width: 35.5rem;
+    height: 5.8rem;
+}
+
+
+
+
+
+/* Início página 3 */
+#section-restaurantes {
+    height: 100vh;
+    background: linear-gradient(90deg, #F7797D -60.12%, #FBD786 16.32%, #FBD7B7 100%);
+}
+
+#stitulo7 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.9rem;
+    padding-left: 10.7rem;
+    font-size: 5.4rem;
+}
+
+#stexto2 {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 10.7rem;
+
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+}
+
+#section-restaurantes ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10.7rem;
+    padding-right: 10.7rem;
+    list-style: none;
+}
+
+.card{
+    position: relative;
+    padding-top: 8rem;
+    cursor: pointer;
+}
+
+.card:hover .card-image{
+    filter: brightness(0.4);
+}
+
+.card:hover .card-info{
+    opacity: 1;
+    bottom: 20%;
+}
+
+.card-image img {
+    height: 40rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 10%;
+    opacity: 0;
+    transition: opacity .5s ease-in-out, bottom .5s;
+    color: #FFF;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4.1rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    font-size: 2rem;
+    font-weight: 300;
 }
