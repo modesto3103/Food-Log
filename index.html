@@ -102,23 +102,40 @@
 
         <section id="section-pesquisa">
             <h3 id="stitulo8">Vamos procurar um <br>restaurante?</h3>
-            <div>
-                <p>
-                    Tipo de comida <br>
-                    Valor máximo <br>
-                    Avaliação média <br>
-                    Estacionamento <br>
-                    Aceita VR
-                </p>
-
-                <form action="">
-                    <input type="text" id="tipo">
-                    <input type="range" id="valor">
-                    <input type="range" id="avaliacao">
-                    <input type="checkbox" id="estacionamento">
-                    <input type="checkbox" id="vr">
-                </form>
-            </div>
+            <div class="linha"></div>
+            <ul>
+                <li id="tipo">
+                    <p>Tipo de comida</p>
+                    <form action="">
+                        <input type="text" id="input-tipo" placeholder="ex. Nordestina">
+                    </form>
+                </li>
+                <li id="valor">
+                    <p>Valor máximo</p>
+                    <form action="">
+                        <input type="range" id="input-valor">
+                    </form>
+                </li>
+                <li id="avaliacao">
+                    <p>Avaliação média</p>
+                    <form action="">
+                        <input type="range" id="input-avaliacao">
+                    </form>
+                </li>
+                <li id="estacionamento">
+                    <p>Estacionamento</p>
+                    <form action="">
+                        <input type="checkbox" id="input-estacionamento">
+                    </form>
+                </li>
+                <li id="vr">
+                    <p>Aceita VR</p>
+                    <form action="">
+                        <input type="checkbox" id="input-vr">
+                    </form>
+                </li>
+            </ul>
+            <div class="linha"></div>
         </section>
     </body>
 </html>

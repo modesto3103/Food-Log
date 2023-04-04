@@ -151,16 +151,17 @@ header::before {
 
 #div-section-menu {  
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     
-    padding-top: 7.5rem;
+    padding-top: 6.1rem;
+    padding-bottom: 4.5rem;
     gap: 5rem;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
+    margin-left: 50%;
 }
 
-#smenu1 { 
-    padding-left: 23.2rem;
+#smenu1 {
+    margin-top: -0.2rem;
     font-size: 2.9rem;
     font-weight: 600;
 
@@ -315,36 +316,6 @@ header::before {
     z-index: -1;
 }
 
-/* #section-pesquisa div {
-    
-} */
-
-#section-pesquisa form {
-    display: grid;
-    justify-items: flex-start;
-    row-gap: 1rem;
-    padding: 2rem;
-}
-
-#tipo {
-    justify-self: center;
-}
-
-#estacionamento {
-    margin-left: 8.2rem;
-}
-
-#vr {
-    margin-left: 8.2rem;
-}
-
-input[type=number]{
-    padding: .5rem;
-    background-color: #212121;
-    color: var(--color-default);
-    border: none;
-}
-
 #section-pesquisa h3 {
     padding-left: 10.7rem;
     padding-top: 9.1rem;
@@ -354,4 +325,47 @@ input[type=number]{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.linha {
+    margin-top: 2.1rem;
+    width: 100%;
+    height: 0.8rem;
+    background: linear-gradient(90deg, #F7797D -73.73%, #FBD786 9.53%, #FBD7B7 100.04%);
+}
+
+#section-pesquisa li {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 33.9rem 1fr);
+    justify-items: start;
+    row-gap: 1rem;
+    padding-top: 3rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+}
+
+#section-pesquisa ul {
+    margin-top: 3.6rem;
+    margin-left: 50%;
+    margin-bottom: 3.6rem;
+    transform: translateX(-50%);
+}
+
+input[type="text"] {
+    width: 30rem;
+    height: 3.3rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+input[type="range"] {
+    width: 30rem;
+}
+
+input[type=checkbox] {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 14rem;
 }
