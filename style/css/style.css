@@ -361,11 +361,15 @@ input[type="text"] {
 }
 
 input[type="range"] {
-    width: 30rem;
+    width: 15rem;
 }
 
 input[type=checkbox] {
     width: 2rem;
     height: 2rem;
     margin-left: 14rem;
+}
+
+.linhas {
+    grid-row: 1;
 }
