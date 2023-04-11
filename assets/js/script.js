@@ -3,7 +3,13 @@ document.querySelector("#inputAvaliacao").addEventListener("change", calcularAva
 
 function calcularValor() {
     let valor = inputValor.value
-    outputValor.innerHTML = `R$${valor}`
+    valor *= 10
+
+    if (valor == 210) {
+        outputValor.innerHTML = `+R$${valor-10},00`;
+    } else {
+        outputValor.innerHTML = `R$${valor},00`;
+    }
 }
 
 function calcularAvaliacao() {
