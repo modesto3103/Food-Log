@@ -7,10 +7,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FoodLog</title>
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
-        <header>
+        <div class="hamburguer">
+            <div class="linha-hamburguer"></div>
+            <div class="linha-hamburguer"></div>
+            <div class="linha-hamburguer"></div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li><a href="">login</a></li>
+                <li><a href="">restaurantes</a></li>
+                <li><a href="">backlog</a></li>
+                <li><a href="">sobre nós</a></li>
+                <li><a href="">ajuda</a></li>
+            </ul>
+        </nav>
+
+        <header id="home">
             <h1 id="food">Food</h1>
             <h1 id="log">Log</h1>
 
@@ -140,5 +163,6 @@
             <div class="linha"></div>
         </section>
         <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/menu.js"></script>
     </body>
 </html>
