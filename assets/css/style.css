@@ -20,16 +20,21 @@ html {
 
 
 /* Início página 1 */
-.hamburguer {
+.icon-hamburguer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 2.4rem;
     width: 2.4rem;
-    position: fixed;
+    position: absolute;
     right: 2rem;
-    top: 2rem;
+    top: 100rem;
     z-index: 10;
+    cursor: pointer;
+}
+
+.fixed {
+    position: fixed;
 }
 
 .linha-hamburguer {
@@ -40,18 +45,42 @@ html {
     z-index: 8;
 }
 
-.menu {
-    height: 100vh;
-    width: 20rem;
+ul {
+    list-style: none;
+}
+
+.menu-hamburguer li {
+    margin-bottom: 1rem;
+}
+
+.menu-hamburguer a {
+    color: white;
+    text-decoration: none;
+    padding-left: 5rem;
+
+    background: linear-gradient(90deg, #F7797D -79.3%, #FBD786 7.77%, #FBD7B7 102.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.menu-hamburguer a:hover {
+    color: #FFF;
+}
+
+.menu-hamburguer {
+    height: 32.5rem;
+    width: 27rem;
     position: fixed;
-    right: -20rem;
-    background-color: #FFF;
+    right: -27rem;
+    background-color: #212121;
     z-index: 9;
     transition: right 1s;
-    cursor: pointer;
     font-size: 2.4rem;
-    text-decoration: none;
-    color: #FFF
+    color: #FFF;
+    padding-top: 5rem;
+    /* margin-top: 1rem;
+    margin-right: 1rem; */
 }
 
 .show-menu {

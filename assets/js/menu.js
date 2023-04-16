@@ -1,5 +1,5 @@
-document.querySelector(".hamburguer").addEventListener("click", mostrar_manu)
+document.querySelector(".icon-hamburguer").addEventListener("click", mostrar_manu)
 
 function mostrar_manu() {
-    document.querySelector(".menu").classList.toggle("show-menu")
+    document.querySelector(".menu-hamburguer").classList.toggle("show-menu")
 }
