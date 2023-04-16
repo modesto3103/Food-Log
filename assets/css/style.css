@@ -20,6 +20,18 @@ html {
 
 
 /* Início página 1 */
+
+.container-hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 2rem;
+    z-index: 10;
+    cursor: pointer;
+    right: 0;
+}
+
 .icon-hamburguer {
     display: flex;
     flex-direction: column;
@@ -28,7 +40,6 @@ html {
     width: 2.4rem;
     position: absolute;
     right: 2rem;
-    top: 100rem;
     z-index: 10;
     cursor: pointer;
 }
@@ -69,9 +80,9 @@ ul {
 }
 
 .menu-hamburguer {
-    height: 32.5rem;
+    height: 32.6rem;
     width: 27rem;
-    position: fixed;
+    /* position: fixed; */
     right: -27rem;
     background-color: #212121;
     z-index: 9;
@@ -79,12 +90,14 @@ ul {
     font-size: 2.4rem;
     color: #FFF;
     padding-top: 5rem;
+    display: none;
     /* margin-top: 1rem;
     margin-right: 1rem; */
+    margin-top: -6.1rem;
 }
 
 .show-menu {
-    right: 0;
+    display: block;
 }
 
 header {
@@ -439,4 +452,9 @@ input[type=checkbox] {
 
 .linhas {
     grid-row: 1;
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
 }
