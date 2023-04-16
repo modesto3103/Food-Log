@@ -58,10 +58,11 @@ html {
 
 ul {
     list-style: none;
+    margin-top: 1rem;
 }
 
 .menu-hamburguer li {
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .menu-hamburguer a {
@@ -80,9 +81,8 @@ ul {
 }
 
 .menu-hamburguer {
-    height: 32.6rem;
+    height: 41.6rem;
     width: 27rem;
-    /* position: fixed; */
     right: -27rem;
     background-color: #212121;
     z-index: 9;
@@ -91,9 +91,8 @@ ul {
     color: #FFF;
     padding-top: 5rem;
     display: none;
-    /* margin-top: 1rem;
-    margin-right: 1rem; */
     margin-top: -6.1rem;
+    top: 100rem;
 }
 
 .show-menu {
