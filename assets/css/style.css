@@ -144,32 +144,21 @@ header::before {
     background-clip: text;
 }
 
-.header-menu {
+#header-div {
     position: absolute;
+    top: 22.8rem;
     right: 10.9rem;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: flex-end;
     font-size: 2.5rem;
     color: #FFF;
     text-decoration: none;
-}
-
-#hmenu1 {
-    top: 22.8rem;
-}
-
-#hmenu2 {
-    top: 28.8rem;
-}
-
-#hmenu3 {
-    top: 34.2rem;
-}
-
-#hmenu4 {
-    top: 40.2rem;
-}
-
-#hmenu5 {
-    top: 46.2rem;
+    padding-bottom: 3rem;
+    row-gap: 10rem;
+    column-gap: 10rem;
 }
 
 .botao {
@@ -233,8 +222,8 @@ header::before {
     justify-content: space-evenly;
     
     padding-top: 6.1rem;
-    padding-bottom: 4.5rem;
-    gap: 5rem;
+    column-gap: 5rem;
+    row-gap: 2.4rem;
     transform: translateX(-50%);
     margin-left: 50%;
 }
@@ -251,6 +240,7 @@ header::before {
 }
 
 #stitulo1 {
+    padding-top: 3.6%;
     padding-left: 10.8rem;
     font-size: 5.4rem;
 
@@ -264,9 +254,9 @@ header::before {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
     flex-wrap: wrap;
-
-    width: 95rem;
+    width: 75.5%;
 
     padding-top: 2.9rem;
     padding-left: 10.7rem;
@@ -465,21 +455,81 @@ input[type=checkbox] {
     }
 }
 
+@media (max-width: 1200px) {
+    #food {
+        font-size: 20rem;
+    }
+
+    #log {
+        margin-top: -6.5rem;
+        font-size: 15.52rem;
+    }
+
+    #stitulo1 {
+        padding-top: 3.6%;
+        padding-left: 10.8rem;
+        font-size: 4rem;
+    }
+
+    #stexto1 {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    
+    #card-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 1120px) {
+    #div-section-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 9rem);
+        justify-items: center;
+    }
+
+    #section-pesquisa li {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media (max-width: 900px) {
+    
+
+    #section-pesquisa p {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 850px) {
+    #stexto1 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    #sbotao {
+        width: 20rem;
+        height: 3.26rem;
+        font-size: 1.18rem;
+        padding: 1.6rem 6.5rem;
+    }
+
+    #card-2 {
+        display: none;
+    }
+}
+
 @media (max-width: 800px) {
     .mobile-only {
         display: none;
     }
 
     #food {
-        /* padding-top: 7.8rem;
-        margin-left: -1.6rem; */
         font-size: 15rem;
     }
 
     #log {
-        /* padding-top: 0rem;
-        margin-top: -12rem;
-        margin-left: -1.595rem; */
         margin-top: -6.5rem;
         font-size: 11.64rem;
     }
@@ -487,39 +537,29 @@ input[type=checkbox] {
     #section-restaurantes ul {
         flex-direction: column;
     }
-
-    #section-pesquisa li {
-        grid-template-columns: 1fr;
-
-    }
-
-    #section-pesquisa p {
-        flex-direction: column;
-    }
-
-    #div-section-menu {
-        display: grid;
-        grid-template-columns: repeat(3, 9rem);
-        justify-items: center;
-    }
-
-/*     #smenu3 {
-        padding-left: 50%;
-    }
-
-    #smenu6 {
-        padding-left: 50%;
-    } */
 }
 
-/* @media (max-width: 900px) {
-    #secao-projetos ul{
-        flex-direction: column;
+@media (max-width: 800px) {
+    #food {
+        padding-top: 2rem;
     }
-    .large-only {
-        display: none;
+    
+    #header-div {
+        top: 40vh;
+        right:50vw;
     }
-    #secao-orcamento form {
-        grid-template-columns: 1fr;
+
+    .header-menu {
+        transform: translateX(50%);
+        right:50vw;
+        justify-content: center;
+        text-align: center;
     }
-} */
+}
+
+@media (max-width: 550px) {
+    #stexto1 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
