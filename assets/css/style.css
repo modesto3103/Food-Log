@@ -28,7 +28,6 @@ html {
     position: absolute;
     right: 2rem;
     z-index: 10;
-    cursor: pointer;
     right: 0;
 }
 
@@ -118,7 +117,7 @@ header::before {
     height: 100%;
     background-image: url('../Images/background-header.png');
     background-size: cover;
-    background-position-y: center;
+    background-position: 25% center;
     z-index: -1;
 }
 
@@ -186,7 +185,8 @@ header::before {
 }
 
 #hbotao {
-    margin-top: 9.3rem;
+    position: absolute;
+    bottom: 8vh;
     margin-left: 50%;
     transform: translate(-50%);
 
@@ -264,6 +264,9 @@ header::before {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    width: 95rem;
 
     padding-top: 2.9rem;
     padding-left: 10.7rem;
@@ -280,8 +283,6 @@ header::before {
     width: 35.5rem;
     height: 5.8rem;
 }
-
-
 
 
 
@@ -391,7 +392,7 @@ header::before {
     height: 100%;
     background-image: url('../Images/background-section-pesquisa.png');
     background-size: cover;
-    background-position-y: center;
+    background-position: center center;
     z-index: -1;
 }
 
@@ -457,3 +458,68 @@ input[type=checkbox] {
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 1500px) {
+    .large-only {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .mobile-only {
+        display: none;
+    }
+
+    #food {
+        /* padding-top: 7.8rem;
+        margin-left: -1.6rem; */
+        font-size: 15rem;
+    }
+
+    #log {
+        /* padding-top: 0rem;
+        margin-top: -12rem;
+        margin-left: -1.595rem; */
+        margin-top: -6.5rem;
+        font-size: 11.64rem;
+    }
+
+    #section-restaurantes ul {
+        flex-direction: column;
+    }
+
+    #section-pesquisa li {
+        grid-template-columns: 1fr;
+
+    }
+
+    #section-pesquisa p {
+        flex-direction: column;
+    }
+
+    #div-section-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 9rem);
+        justify-items: center;
+    }
+
+/*     #smenu3 {
+        padding-left: 50%;
+    }
+
+    #smenu6 {
+        padding-left: 50%;
+    } */
+}
+
+/* @media (max-width: 900px) {
+    #secao-projetos ul{
+        flex-direction: column;
+    }
+    .large-only {
+        display: none;
+    }
+    #secao-orcamento form {
+        grid-template-columns: 1fr;
+    }
+} */

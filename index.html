@@ -17,11 +17,13 @@
 
             <a class="botao" id="hbotao" href="#section-comidas">vamos começar!</a>
 
-            <a class="header-menu" id="hmenu1" href="#">login</a>
-            <a class="header-menu" id="hmenu2" href="#">restaurantes</a>
-            <a class="header-menu" id="hmenu3" href="#">o que é um backlog</a>
-            <a class="header-menu" id="hmenu4" href="#">sobre nós</a>
-            <a class="header-menu" id="hmenu5" href="#">ajuda</a>
+            <div>
+                <a class="header-menu" id="hmenu1" href="#">login</a>
+                <a class="header-menu" id="hmenu2" href="#">restaurantes</a>
+                <a class="header-menu" id="hmenu3" href="#">o que é um backlog</a>
+                <a class="header-menu" id="hmenu4" href="#">sobre nós</a>
+                <a class="header-menu" id="hmenu5" href="#">ajuda</a>
+            </div>
         </header>
 
         <div class="container-section">
@@ -81,49 +83,60 @@
                     <a class="section-menu" id="smenu3" href="#">Francesa</a>
                     <a class="section-menu" id="smenu4" href="#">Italiana</a>
                     <a class="section-menu" id="smenu5" href="#">Japonêsa</a>
-                    <a class="section-menu" id="smenu6" href="#">Mediterrânea</a>
+                    <a class="section-menu" id="smenu6" href="#">Mexicana</a>
                 </div>
-    
-                <h3 class="section-titulo" id="stitulo1">A culinária pioneira <br>da humanidade</h3>
-                <h3 class="section-titulo" id="stitulo2"></h3>
-                <h3 class="section-titulo" id="stitulo3"></h3>
-                <h3 class="section-titulo" id="stitulo4"></h3>
-                <h3 class="section-titulo" id="stitulo5"></h3>
-                <h3 class="section-titulo" id="stitulo6"></h3>
-    
-                <p class="section-texto" id="stexto1">
-                    Culinária árabe é um termo que define as diversas culinárias <br>
-                    regionais existentes por todo o Mundo Árabe, do Iraque a <br>
-                    Marrocos passando pelo Egito, Levante, entre outros. Também foi <br>
-                    influenciada pelas culinárias vizinhas, como da Turquia, Paquistão, <br>
-                    Irã e Índia, além dos hábitos alimentares dos berberes e de outros <br>
-                    povos e culturas que habitavam estas regiões antes do processo <br>
-                    de arabização cultural empreendido pelos árabes durante a <br>
-                    chamada expansão islâmica.</p>
-                <p class="section-texto" id="stexto2"></p>
-                <p class="section-texto" id="stexto3"></p>
-                <p class="section-texto" id="stexto4"></p>
-                <p class="section-texto" id="stexto5"></p>
-                <p class="section-texto" id="stexto6"></p>
-    
-                <a class="botao" id="sbotao" href="#section-restaurantes">explorar restaurantes</a>        
+
+                <!-- <div id="div-section-comidas"> -->
+                    <h3 class="section-titulo" id="stitulo1">A culinária pioneira <br>da humanidade</h3>
+                    <!-- <h3 class="section-titulo" id="stitulo2"></h3>
+                    <h3 class="section-titulo" id="stitulo3"></h3>
+                    <h3 class="section-titulo" id="stitulo4"></h3>
+                    <h3 class="section-titulo" id="stitulo5"></h3>
+                    <h3 class="section-titulo" id="stitulo6"></h3> -->
+        
+                    <p class="section-texto" id="stexto1">
+                        <!-- Culinária árabe é um termo que define as diversas culinárias <br>
+                        regionais existentes por todo o Mundo Árabe, do Iraque a <br>
+                        Marrocos passando pelo Egito, Levante, entre outros. Também foi <br>
+                        influenciada pelas culinárias vizinhas, como da Turquia, Paquistão, <br>
+                        Irã e Índia, além dos hábitos alimentares dos berberes e de outros <br>
+                        povos e culturas que habitavam estas regiões antes do processo <br>
+                        de arabização cultural empreendido pelos árabes durante a <br>
+                        chamada expansão islâmica. -->
+                        Culinária árabe é um termo que define as diversas culinárias
+                        regionais existentes por todo o Mundo Árabe, do Iraque a 
+                        Marrocos passando pelo Egito, Levante, entre outros. Também foi 
+                        influenciada pelas culinárias vizinhas, como da Turquia, Paquistão, 
+                        Irã e Índia, além dos hábitos alimentares dos berberes e de outros 
+                        povos e culturas que habitavam estas regiões antes do processo 
+                        de arabização cultural empreendido pelos árabes durante a 
+                        chamada expansão islâmica.
+                    </p>
+                    <!-- <p class="section-texto" id="stexto2"></p>
+                    <p class="section-texto" id="stexto3"></p>
+                    <p class="section-texto" id="stexto4"></p>
+                    <p class="section-texto" id="stexto5"></p>
+                    <p class="section-texto" id="stexto6"></p> -->
+        
+                    <a class="botao" id="sbotao" href="#section-restaurantes">explorar restaurantes</a>
+                <!-- </div> -->
             </section>
-    
+
             <section id="section-restaurantes">
                 <h3 id="stitulo7">Restaurantes</h3>
                 <p id="stexto2">Principais escolhas de nossos clientes</p>  
                 
-                <ul>
-                    <li class="card">
+                <ul id="cards">
+                    <li class="card" id="card-1">
                         <div class="card-image">
                             <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80" alt="">
                         </div>
                         <div class="card-info">
                             <h4 class="card-title">Bella Città Café</h3>
-                            <p class="card-text">Panquecas americanas com mel e banana</p>
+                            <p class="card-text">Panquecas americanas com banana e mel</p>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card" id="card-2">
                         <div class="card-image">
                             <img src="https://images.unsplash.com/photo-1454334281609-87a89762912c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80" alt="">
                         </div>
@@ -132,17 +145,19 @@
                             <p class="card-text">Udon com camarões japoneses</p>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card" id="card-3">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt=""></div>
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                        </div>
                         <div class="card-info">
                             <h4 class="card-title">Savory Soiree</h4>
                             <p class="card-text">Salada com castanhas e azeitonas</p>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card large-only" id="card-4">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1589375890993-7b568c0b8b1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1498&q=80" alt=""></div>
+                            <img src="https://images.unsplash.com/photo-1589375890993-7b568c0b8b1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1498&q=80" alt="">
+                        </div>
                         <div class="card-info">
                             <h4 class="card-title">La Trattoria dei Sapori</h4>
                             <p class="card-text">Pizza de batata assada com berinjela e quijo suiço</p>
