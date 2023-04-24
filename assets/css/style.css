@@ -125,6 +125,7 @@ header::before {
     padding-top: 7.8rem;
     margin-left: -1.6rem;
     font-size: 28.45rem;
+    /* font-size: 22vw; */
 
     background: linear-gradient(90deg, #F7797D -79.3%, #FBD786 7.77%, #FBD7B7 102.4%);
     -webkit-background-clip: text;
@@ -137,6 +138,7 @@ header::before {
     margin-top: -12rem;
     margin-left: -1.595rem;
     font-size: 22.10rem;
+    /* font-size: 16.5vw; */
 
     background: linear-gradient(90deg, #F7797D -108.04%, #FBD786 10.58%, #FBD7B7 139.52%);
     -webkit-background-clip: text;
@@ -240,8 +242,8 @@ header::before {
 }
 
 #stitulo1 {
-    padding-top: 3.6%;
-    padding-left: 10.8rem;
+    padding-top: 3.6vh;
+    padding-left: 8.5vw;
     font-size: 5.4rem;
 
     background: linear-gradient(90deg, #F7797D -73.73%, #FBD786 9.53%, #FBD7B7 100.04%);
@@ -259,7 +261,7 @@ header::before {
     width: 75.5%;
 
     padding-top: 2.9rem;
-    padding-left: 10.7rem;
+    padding-left: 8.5vw;
 
     font-size: 2.5rem;
     font-weight: 500;
@@ -268,7 +270,7 @@ header::before {
 
 #sbotao {
     margin-top: 3.8rem;
-    margin-left: 10.7rem;
+    margin-left: 8.5vw;
 
     width: 35.5rem;
     height: 5.8rem;
@@ -286,7 +288,7 @@ header::before {
     display: flex;
     flex-direction: column;
     padding-top: 7.9rem;
-    padding-left: 10.7rem;
+    padding-left: 8.5vw;
     font-size: 5.4rem;
 }
 
@@ -294,7 +296,7 @@ header::before {
     display: flex;
     flex-direction: column;
 
-    padding-left: 10.7rem;
+    padding-left: 8.5vw;
 
     font-size: 2.5rem;
     font-weight: 500;
@@ -304,8 +306,8 @@ header::before {
 #section-restaurantes ul{
     display: flex;
     justify-content: space-between;
-    padding-left: 10.7rem;
-    padding-right: 10.7rem;
+    padding-left: 8.5vw;
+    padding-right: 8.5vw;
     list-style: none;
 }
 
@@ -387,7 +389,7 @@ header::before {
 }
 
 #section-pesquisa h3 {
-    padding-left: 10.7rem;
+    padding-left: 8.5vw;
     padding-top: 9.1rem;
     font-size: 5.4rem;
     
@@ -449,6 +451,10 @@ input[type=checkbox] {
     flex-direction: column;
 }
 
+
+
+
+
 @media (max-width: 1500px) {
     .large-only {
         display: none;
@@ -458,16 +464,16 @@ input[type=checkbox] {
 @media (max-width: 1200px) {
     #food {
         font-size: 20rem;
+        /* padding-top: 2rem; */
     }
 
     #log {
-        margin-top: -6.5rem;
+        margin-top: -8.5rem;
         font-size: 15.52rem;
     }
 
     #stitulo1 {
         padding-top: 3.6%;
-        padding-left: 10.8rem;
         font-size: 4rem;
     }
 
@@ -487,11 +493,6 @@ input[type=checkbox] {
         grid-template-columns: repeat(3, 9rem);
         justify-items: center;
     }
-
-    #section-pesquisa li {
-        grid-template-columns: 1fr;
-
-    }
 }
 
 @media (max-width: 900px) {
@@ -510,13 +511,9 @@ input[type=checkbox] {
 
     #sbotao {
         width: 20rem;
-        height: 3.26rem;
+        height: 3.3rem;
         font-size: 1.18rem;
-        padding: 1.6rem 6.5rem;
-    }
-
-    #card-2 {
-        display: none;
+        padding: 0.9rem 3.55rem;
     }
 }
 
@@ -527,33 +524,71 @@ input[type=checkbox] {
 
     #food {
         font-size: 15rem;
+        padding-top: 2rem;
     }
 
     #log {
         margin-top: -6.5rem;
         font-size: 11.64rem;
     }
-
-    #section-restaurantes ul {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 800px) {
-    #food {
-        padding-top: 2rem;
-    }
     
     #header-div {
         top: 40vh;
-        right:50vw;
+        right: 50vw;
     }
 
     .header-menu {
         transform: translateX(50%);
-        right:50vw;
+        right: 50vw;
         justify-content: center;
         text-align: center;
+    }
+
+    #section-pesquisa li {
+        grid-template-columns: 1fr;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-pesquisa ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #section-pesquisa h3 {
+        padding-left: 8.5vw;
+        padding-top: 9.1rem;
+        font-size: 4rem;
+    }
+
+    #valor p {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 9rem);
+    }
+
+    input[type=checkbox] {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 750px) {
+    #section-restaurantes ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card{
+        padding-top: 3rem;
+    }
+
+    .card-image img {
+        height: 35vh;
+        width: calc(35vh / 4 * 3);
     }
 }
 
@@ -561,5 +596,44 @@ input[type=checkbox] {
     #stexto1 {
         font-size: 1.5rem;
         line-height: 3rem;
+    }
+    
+    .section-menu {
+        font-size: 1.8rem;
+        padding-right: 5rem;
+    }
+
+    #div-section-menu {  
+        column-gap: 1.5rem;
+        row-gap: 1.2rem;
+    }
+
+    #smenu1 {
+        font-size: 2.1rem
+    }
+
+    #stitulo1 {
+        font-size: 3rem;
+    }
+
+    #stitulo7 {
+        font-size: 3rem;
+    }
+
+    #stexto2 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #food {
+        font-size: 12rem;
+        padding-top: 5rem;
+    }
+
+    #log {
+        margin-top: -5rem;
+        font-size: 9.31rem;
     }
 }
