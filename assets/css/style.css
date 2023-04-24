@@ -117,7 +117,7 @@ header::before {
     height: 100%;
     background-image: url('../Images/background-header.png');
     background-size: cover;
-    background-position: 25% center;
+    background-position: 40% center;
     z-index: -1;
 }
 
@@ -456,6 +456,7 @@ input[type=checkbox] {
 
 
 
+/* Responsividade */
 @media (max-width: 1500px) {
     .large-only {
         display: none;
@@ -573,6 +574,14 @@ input[type=checkbox] {
 
     .card{
         padding-top: 3rem;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .card-text {
+        font-size: 1.4rem;
     }
 
     .card-image img {
