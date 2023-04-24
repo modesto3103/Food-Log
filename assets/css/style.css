@@ -136,7 +136,7 @@ header::before {
 #log {
     padding-top: 0rem;
     margin-top: -12rem;
-    margin-left: -1.595rem;
+    margin-left: -1.6rem;
     font-size: 22.10rem;
     /* font-size: 16.5vw; */
 
@@ -161,6 +161,7 @@ header::before {
     padding-bottom: 3rem;
     row-gap: 10rem;
     column-gap: 10rem;
+    width: 16ch;
 }
 
 .botao {
@@ -473,7 +474,7 @@ input[type=checkbox] {
     }
 
     #stitulo1 {
-        padding-top: 3.6%;
+        padding-top: 3.6vh;
         font-size: 4rem;
     }
 
@@ -542,34 +543,22 @@ input[type=checkbox] {
         right: 50vw;
         justify-content: center;
         text-align: center;
+        padding-bottom: 2.5rem;
     }
 
     #section-pesquisa li {
-        grid-template-columns: 1fr;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: repeat(1, 40vw 1fr);
     }
 
     #section-pesquisa ul {
-        margin-top: 0;
-        margin-bottom: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     #section-pesquisa h3 {
         padding-left: 8.5vw;
-        padding-top: 9.1rem;
+        padding-top: 7rem;
         font-size: 4rem;
-    }
-
-    #valor p {
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: repeat(2, 9rem);
-    }
-
-    input[type=checkbox] {
-        margin-left: 0;
     }
 }
 
@@ -587,15 +576,45 @@ input[type=checkbox] {
     }
 
     .card-image img {
-        height: 35vh;
-        width: calc(35vh / 4 * 3);
+        height: 33vh;
+        width: calc(33vh / 4 * 3);
+    }
+
+    #stitulo7 {
+        padding-top: 5rem;
+        font-size: 3rem;
+    }
+
+    #stexto2 {
+        font-size: 1.5rem;
+        line-height: 3rem;
     }
 }
 
+@media (max-width: 650px) {
+    #section-pesquisa li {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    input[type=checkbox] {
+        margin-left: 0;
+    }
+}
+
+
 @media (max-width: 550px) {
+    #hmenu3 {
+        width: 16ch;
+    }
+    
     #stexto1 {
         font-size: 1.5rem;
         line-height: 3rem;
+        padding-top: .9rem;
     }
     
     .section-menu {
@@ -616,13 +635,15 @@ input[type=checkbox] {
         font-size: 3rem;
     }
 
-    #stitulo7 {
+    #section-pesquisa h3 {
+        padding-top: 5rem;
         font-size: 3rem;
     }
+}
 
-    #stexto2 {
-        font-size: 1.5rem;
-        line-height: 3rem;
+@media (max-width: 450px) {
+    #stexto1 {
+        line-height: 2.2rem;
     }
 }
 
@@ -634,6 +655,43 @@ input[type=checkbox] {
 
     #log {
         margin-top: -5rem;
+        margin-left: -1.4rem;
         font-size: 9.31rem;
+    }
+
+    #hbotao {
+        margin-top: 3rem;
+        width: 29rem;
+        padding: 1.6rem 5rem;
+    }
+
+    #header-div {
+        top: 44vh;
+    }
+
+    .header-menu {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .section-menu {
+        font-size: 1.5rem;
+    }
+
+    #smenu1 {
+        font-size: 1.8rem;
+    }
+
+    #div-section-menu {
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    #stitulo1 {
+        font-size: 2.5rem;
+    }
+
+    #section-pesquisa h3 {
+        font-size: 2.5rem;
     }
 }
